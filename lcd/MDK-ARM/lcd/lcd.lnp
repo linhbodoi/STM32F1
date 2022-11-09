@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"lcd\startup_stm32f103xb.o"
+"lcd\main.o"
+"lcd\stm32f1xx_it.o"
+"lcd\stm32f1xx_hal_msp.o"
+"lcd\lcd_16x2.o"
+"lcd\stm32f1xx_hal_gpio_ex.o"
+"lcd\stm32f1xx_hal_tim.o"
+"lcd\stm32f1xx_hal_tim_ex.o"
+"lcd\stm32f1xx_hal.o"
+"lcd\stm32f1xx_hal_rcc.o"
+"lcd\stm32f1xx_hal_rcc_ex.o"
+"lcd\stm32f1xx_hal_gpio.o"
+"lcd\stm32f1xx_hal_dma.o"
+"lcd\stm32f1xx_hal_cortex.o"
+"lcd\stm32f1xx_hal_pwr.o"
+"lcd\stm32f1xx_hal_flash.o"
+"lcd\stm32f1xx_hal_flash_ex.o"
+"lcd\stm32f1xx_hal_exti.o"
+"lcd\system_stm32f1xx.o"
+--strict --scatter "lcd\lcd.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lcd.map" -o lcd\lcd.axf

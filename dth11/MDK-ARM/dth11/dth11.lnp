@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"dth11\startup_stm32f103xb.o"
+"dth11\main.o"
+"dth11\stm32f1xx_it.o"
+"dth11\stm32f1xx_hal_msp.o"
+"dth11\stm32f1xx_hal_gpio_ex.o"
+"dth11\stm32f1xx_hal_tim.o"
+"dth11\stm32f1xx_hal_tim_ex.o"
+"dth11\stm32f1xx_hal.o"
+"dth11\stm32f1xx_hal_rcc.o"
+"dth11\stm32f1xx_hal_rcc_ex.o"
+"dth11\stm32f1xx_hal_gpio.o"
+"dth11\stm32f1xx_hal_dma.o"
+"dth11\stm32f1xx_hal_cortex.o"
+"dth11\stm32f1xx_hal_pwr.o"
+"dth11\stm32f1xx_hal_flash.o"
+"dth11\stm32f1xx_hal_flash_ex.o"
+"dth11\stm32f1xx_hal_exti.o"
+"dth11\system_stm32f1xx.o"
+--strict --scatter "dth11\dth11.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "dth11.map" -o dth11\dth11.axf

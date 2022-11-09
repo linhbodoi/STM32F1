@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"cambienkhigas\startup_stm32f103xb.o"
+"cambienkhigas\main.o"
+"cambienkhigas\stm32f1xx_it.o"
+"cambienkhigas\stm32f1xx_hal_msp.o"
+"cambienkhigas\stm32f1xx_hal_gpio_ex.o"
+"cambienkhigas\stm32f1xx_hal_adc.o"
+"cambienkhigas\stm32f1xx_hal_adc_ex.o"
+"cambienkhigas\stm32f1xx_hal.o"
+"cambienkhigas\stm32f1xx_hal_rcc.o"
+"cambienkhigas\stm32f1xx_hal_rcc_ex.o"
+"cambienkhigas\stm32f1xx_hal_gpio.o"
+"cambienkhigas\stm32f1xx_hal_dma.o"
+"cambienkhigas\stm32f1xx_hal_cortex.o"
+"cambienkhigas\stm32f1xx_hal_pwr.o"
+"cambienkhigas\stm32f1xx_hal_flash.o"
+"cambienkhigas\stm32f1xx_hal_flash_ex.o"
+"cambienkhigas\stm32f1xx_hal_exti.o"
+"cambienkhigas\stm32f1xx_hal_tim.o"
+"cambienkhigas\stm32f1xx_hal_tim_ex.o"
+"cambienkhigas\system_stm32f1xx.o"
+--strict --scatter "cambienkhigas\cambienkhigas.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cambienkhigas.map" -o cambienkhigas\cambienkhigas.axf

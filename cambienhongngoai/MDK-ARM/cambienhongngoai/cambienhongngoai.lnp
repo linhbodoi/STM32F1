@@ -1,0 +1,23 @@
+--cpu Cortex-M3
+"cambienhongngoai\startup_stm32f103xb.o"
+"cambienhongngoai\main.o"
+"cambienhongngoai\stm32f1xx_it.o"
+"cambienhongngoai\stm32f1xx_hal_msp.o"
+"cambienhongngoai\stm32f1xx_hal_gpio_ex.o"
+"cambienhongngoai\stm32f1xx_hal_tim.o"
+"cambienhongngoai\stm32f1xx_hal_tim_ex.o"
+"cambienhongngoai\stm32f1xx_hal.o"
+"cambienhongngoai\stm32f1xx_hal_rcc.o"
+"cambienhongngoai\stm32f1xx_hal_rcc_ex.o"
+"cambienhongngoai\stm32f1xx_hal_gpio.o"
+"cambienhongngoai\stm32f1xx_hal_dma.o"
+"cambienhongngoai\stm32f1xx_hal_cortex.o"
+"cambienhongngoai\stm32f1xx_hal_pwr.o"
+"cambienhongngoai\stm32f1xx_hal_flash.o"
+"cambienhongngoai\stm32f1xx_hal_flash_ex.o"
+"cambienhongngoai\stm32f1xx_hal_exti.o"
+"cambienhongngoai\system_stm32f1xx.o"
+--strict --scatter "cambienhongngoai\cambienhongngoai.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "cambienhongngoai.map" -o cambienhongngoai\cambienhongngoai.axf

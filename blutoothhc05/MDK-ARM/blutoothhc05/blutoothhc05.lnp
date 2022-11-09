@@ -1,0 +1,24 @@
+--cpu Cortex-M3
+"blutoothhc05\startup_stm32f103xb.o"
+"blutoothhc05\main.o"
+"blutoothhc05\stm32f1xx_it.o"
+"blutoothhc05\stm32f1xx_hal_msp.o"
+"blutoothhc05\stm32f1xx_hal_gpio_ex.o"
+"blutoothhc05\stm32f1xx_hal_tim.o"
+"blutoothhc05\stm32f1xx_hal_tim_ex.o"
+"blutoothhc05\stm32f1xx_hal_uart.o"
+"blutoothhc05\stm32f1xx_hal.o"
+"blutoothhc05\stm32f1xx_hal_rcc.o"
+"blutoothhc05\stm32f1xx_hal_rcc_ex.o"
+"blutoothhc05\stm32f1xx_hal_gpio.o"
+"blutoothhc05\stm32f1xx_hal_dma.o"
+"blutoothhc05\stm32f1xx_hal_cortex.o"
+"blutoothhc05\stm32f1xx_hal_pwr.o"
+"blutoothhc05\stm32f1xx_hal_flash.o"
+"blutoothhc05\stm32f1xx_hal_flash_ex.o"
+"blutoothhc05\stm32f1xx_hal_exti.o"
+"blutoothhc05\system_stm32f1xx.o"
+--strict --scatter "blutoothhc05\blutoothhc05.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "blutoothhc05.map" -o blutoothhc05\blutoothhc05.axf

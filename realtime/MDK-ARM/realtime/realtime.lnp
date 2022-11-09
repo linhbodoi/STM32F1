@@ -1,0 +1,26 @@
+--cpu Cortex-M3
+"realtime\startup_stm32f103xb.o"
+"realtime\main.o"
+"realtime\stm32f1xx_it.o"
+"realtime\stm32f1xx_hal_msp.o"
+"realtime\stm32f1xx_hal_gpio_ex.o"
+"realtime\stm32f1xx_hal_rtc.o"
+"realtime\stm32f1xx_hal_rtc_ex.o"
+"realtime\stm32f1xx_hal.o"
+"realtime\stm32f1xx_hal_rcc.o"
+"realtime\stm32f1xx_hal_rcc_ex.o"
+"realtime\stm32f1xx_hal_gpio.o"
+"realtime\stm32f1xx_hal_dma.o"
+"realtime\stm32f1xx_hal_cortex.o"
+"realtime\stm32f1xx_hal_pwr.o"
+"realtime\stm32f1xx_hal_flash.o"
+"realtime\stm32f1xx_hal_flash_ex.o"
+"realtime\stm32f1xx_hal_exti.o"
+"realtime\stm32f1xx_hal_tim.o"
+"realtime\stm32f1xx_hal_tim_ex.o"
+"realtime\stm32f1xx_hal_uart.o"
+"realtime\system_stm32f1xx.o"
+--strict --scatter "realtime\realtime.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "realtime.map" -o realtime\realtime.axf

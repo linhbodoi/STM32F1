@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"lcdi2c\startup_stm32f103xb.o"
+"lcdi2c\main.o"
+"lcdi2c\stm32f1xx_it.o"
+"lcdi2c\stm32f1xx_hal_msp.o"
+"lcdi2c\i2c-lcd.o"
+"lcdi2c\stm32f1xx_hal_gpio_ex.o"
+"lcdi2c\stm32f1xx_hal_i2c.o"
+"lcdi2c\stm32f1xx_hal.o"
+"lcdi2c\stm32f1xx_hal_rcc.o"
+"lcdi2c\stm32f1xx_hal_rcc_ex.o"
+"lcdi2c\stm32f1xx_hal_gpio.o"
+"lcdi2c\stm32f1xx_hal_dma.o"
+"lcdi2c\stm32f1xx_hal_cortex.o"
+"lcdi2c\stm32f1xx_hal_pwr.o"
+"lcdi2c\stm32f1xx_hal_flash.o"
+"lcdi2c\stm32f1xx_hal_flash_ex.o"
+"lcdi2c\stm32f1xx_hal_exti.o"
+"lcdi2c\stm32f1xx_hal_tim.o"
+"lcdi2c\stm32f1xx_hal_tim_ex.o"
+"lcdi2c\system_stm32f1xx.o"
+--strict --scatter "lcdi2c\lcdi2c.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "lcdi2c.map" -o lcdi2c\lcdi2c.axf
